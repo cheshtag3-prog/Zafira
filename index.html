@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zafira</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="zafira.css">
+
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .gallery {
+            position: relative;
+
+        }
+
+        .gallery {
+
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            margin-right: 50px;
+            border-radius: 30px;
+        }
+
+        .review {
+            position: relative;
+            height: 100%;
+        }
+
+        .review {
+
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 900px;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- nave bar -->
+    <nav data-aos="flip-up" data-aos-duration="800" class="navbar navbar-expand-lg navbar-light fixed-top custom-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-5" style="font-family: main; color: #0F1C2E;" href="#">
+                <h1>Zafira</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pe-5" style="justify-content: end;" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home" style="text-decoration: none;">HOME</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#service">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#see&do">SEE&DO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nave complete -->
+    <!-- home  -->
+    <div class="container-fluid hero-section" id="home"
+        style="background: url(img/home\ 1.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;  background-attachment: fixed;">
+
+        <div data-aos="flip-up" data-aos-duration="900" class="row justify-content-center  ">
+            <div class="col-lg-6 col-md-8 col-11 hero-box text-center p-lg-5 p-4">
+
+                <h1 class="hero-heading">
+                    Where the Mountains Meet Luxury
+                </h1>
+
+                <h5 class="hero-text">
+                    Experience breathtaking hilltop views, fresh mountain air, and
+                    unforgettable comfort.
+                </h5>
+
+                <button class="hero-btn">
+                    Book Your Stay
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <!--end  -->
+    <!--  -->
+  
+    <!-- our service -->
+    <div class="container services-section" id="service">
+        <div class="row">
+            <h1 data-aos="fade-down" class="text-center service-heading" style="font-family: main;">OUR SERVICE</h1>
+
+            <div data-aos="fade-up"  data-aos-duration="1000" class="col-lg-12 text-center">
+
+                <!-- Row 1 -->
+                <div  class="service-row mt-5">
+
+                    <div class="service-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                            class="bi bi-fork-knife" viewBox="0 0 16 16" style="color: #1A2A40;">
+                            <path
+                                d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z" />
+                        </svg>
+
+                        <h4>Complimentary Breakfast</h4>
+                        <h6>Start your day with a freshly prepared breakfast featuring local flavors and international
+                            favorites, served with breathtaking hill views.</h6>
+                    </div>
+
+                    <div class="service-box">
+                        <i class="fa-solid fa-leaf service-icon"></i>
+                        <h4>Beautiful Garden Area</h4>
+                        <h6>Relax in our peaceful landscaped garden, surrounded by fresh mountain air and natural beauty
+                            — perfect for morning walks or evening tea.</h6>
+                    </div>
+
+                    <div class="service-box">
+                        <i class="fa-solid fa-water-ladder service-icon"></i>
+                        <h4>Scenic Swimming Pool</h4>
+                        <h6>Take a refreshing dip in our pool while enjoying panoramic views of the hills. A perfect way
+                            to unwind and rejuvenate.</h6>
+                    </div>
+
+                </div>
+
+                <!-- Row 2 -->
+                <div class="service-row">
+
+                    <div class="service-box">
+                        <i class="fa-solid fa-wifi service-icon"></i>
+                        <h4>Free High-Speed WiFi</h4>
+                        <h6>Stay connected anytime with complimentary high-speed internet available throughout the
+                            property.</h6>
+                    </div>
+
+                    <div class="service-box">
+                        <i class="fa-solid fa-broom service-icon"></i>
+                        <h4>Daily Housekeeping</h4>
+                        <h6>Our dedicated housekeeping team ensures your room remains clean, fresh, and comfortable
+                            throughout your stay.</h6>
+                    </div>
+
+                    <div class="service-box">
+                        <i class="fa-solid fa-bowl-rice service-icon"></i>
+                        <h4>In-Room Dining Service</h4>
+                        <h6>Enjoy delicious meals delivered directly to your room. Whether it’s breakfast in bed or a
+                            late-night snack, we’re always at your service.</h6>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+    <!-- gallery -->
+    <div class="container gallery m-auto" id="gallery">
+        <div class="row" style="justify-content: center;align-items: center; text-align: center;">
+            <h1 data-aos="fade-down" class="text-center my-5" style="font-size: 40px; color: #0F1C2E; font-family: main;">GALLERY</h1>
+
+            <div data-aos="flip-down"  data-aos-duration="1000" class="col-lg-12">
+
+                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="20"
+                    breakpoints='{
+                    "0": { "slidesPerView": 1 },
+                    "576": { "slidesPerView": 2 },
+                    "768": { "slidesPerView": 2 },
+                    "992": { "slidesPerView": 3 },
+                    "1200": { "slidesPerView": 3 }
+                }'>
+
+                    <swiper-slide><img src="img/1.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/2.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/3.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/5.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/6.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/7.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/8.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/9.jpg" alt=""></swiper-slide>
+
+                </swiper-container>
+
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- Things To Do Around Zakira -->
+    <div class="container mt-5 things-section" id="see&do">
+        <div class="row">
+            <h1 data-aos="fade-down" class="text-center mb-4" style="font-family: main;">Things To Do Around Zakira</h1>
+
+            <div class="col-lg-12">
+
+                <!-- Row 1 -->
+                <div class="mt-5 d-flex flex-wrap justify-content-between things-row">
+
+                    <div class="d-flex things-box">
+                        <img src="img/ttd1.jpg" class="things-img">
+                        <div class="ms-3 pt-4 things-text">
+                            <h4>Wineries Tour</h4>
+                            <h6>Discover the art of winemaking with guided tours to nearby wineries...</h6>
+                        </div>
+                    </div>
+
+                    <div class="d-flex things-box">
+                        <img src="img/ttd2.jpg" class="things-img">
+                        <div class="ms-3 pt-4 things-text">
+                            <h4>Cultural Sites</h4>
+                            <h6>Explore historic landmarks, ancient temples, and heritage sites...</h6>
+                        </div>
+                    </div>
+
+                    <div class="d-flex things-box">
+                        <img src="img/ttd3.jpg" class="things-img">
+                        <div class="ms-3 pt-4 things-text">
+                            <h4>Market Tour</h4>
+                            <h6>Stroll through vibrant local markets filled with handcrafted souvenirs...</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Row 2 -->
+                <div class="d-flex flex-wrap justify-content-between mt-5 things-row">
+
+                    <div class="d-flex things-box">
+                        <img src="img/ttd4.jpg" class="things-img">
+                        <div class="ps-3 pt-4 things-text">
+                            <h4>Leisure Activities</h4>
+                            <h6>Unwind with nature walks, yoga sessions, photography spots...</h6>
+                        </div>
+                    </div>
+
+                    <div class="d-flex things-box">
+                        <img src="img/ttd5.jpg" class="things-img">
+                        <div class="ps-3 pt-4 things-text">
+                            <h4>Bird Safari</h4>
+                            <h6>Experience the thrill of spotting rare and beautiful birds...</h6>
+                        </div>
+                    </div>
+
+                    <div class="d-flex things-box">
+                        <img src="img/ttd6.jpg" class="things-img">
+                        <div class="ps-3 pt-4 things-text">
+                            <h4>Horse Riding</h4>
+                            <h6>Enjoy a scenic horse ride through lush trails...</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- review -->
+    <div class="container-fluid review">
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-lg-10 col-md-11 col-11 review-box m-5">
+                <h1 data-aos="fade-down" class="text-center mt-2" style="color: #1A2A40;font-family: main;">GUEST REVIEW</h1>
+
+                <swiper-container class="mySwiper rrr" pagination="true" pagination-clickable="true" navigation="true"
+                    space-between="30" centered-slides="true" autoplay-delay="2500"
+                    autoplay-disable-on-interaction="false">
+
+                    <swiper-slide>
+                        <div class="d-flex review-card">
+                            <div class="review-img"><img src="img/p1.jpg" alt=""
+                                    style="width: 150px; height: 150px; border-radius: 100px;">
+                            </div>
+                            <div class="text-center review-text" style="color: #1A2A40; width: 500px;">
+                                <h4>Arjun & Meera</h4>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                                <h6>“Absolutely magical! From the moment we arrived, Zafira felt like a dream. Waking up
+                                    to the sunrise over the hills with my partner was the most romantic experience of
+                                    our lives.”</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="d-flex review-card">
+                            <div class="review-img"><img src="img/p2.jpg" alt=""
+                                    style="width: 150px; height: 150px; border-radius: 100px;">
+                            </div>
+                            <div class="text-center review-text" style="color: #1A2A40; width: 500px;">
+                                <h4>Nisha P.</h4>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                                <h6>“Perfect weekend getaway!” The views were breathtaking, the rooms were cozy, and the
+                                    breakfast was divine. We could have stayed forever."</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="d-flex review-card">
+                            <div class="review-img"><img src="img/p3.jpg" alt=""
+                                    style="width: 150px; height: 150px; border-radius: 100px; background: #0F1C2E;">
+                            </div>
+                            <div class="text-center review-text" style="color: #1A2A40; width: 500px;">
+                                <h4>Rahul S.</h4>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                                <h6>“A hidden gem!” This place stole our hearts. The ambiance is peaceful, service is
+                                    warm, and every corner feels picture-perfect.”</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="d-flex review-card">
+                            <div class="review-img"><img src="img/p4.jpg" alt=""
+                                    style="width: 150px; height: 150px; border-radius: 100px; background: #0F1C2E;">
+                            </div>
+                            <div class="text-center review-text" style="color: #1A2A40; width: 500px;">
+                                <h4>Tanya & Vikram</h4>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                                <h6>“Memories to cherish.” Zafira made our anniversary extra special — beautiful décor,
+                                    amazing staff, and that unforgettable dinner under the stars.”</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="d-flex review-card">
+                            <div class="review-img"><img src="img/p5.jpg" alt=""
+                                    style="width: 150px; height: 150px; border-radius: 100px; background: #0F1C2E;">
+                            </div>
+                            <div class="text-center review-text" style="color: #1A2A40; width: 500px;">
+                                <h4>Dev & Priya</h4>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                                <h6>“Truly relaxing.” Loved the pool and garden views. The only thing we wished was a
+                                    longer stay!”</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="d-flex review-card">
+                            <div class="review-img"><img src="img/p6.jpg" alt=""
+                                    style="width: 150px; height: 150px; border-radius: 100px; background: #0F1C2E;">
+                            </div>
+                            <div class="text-center review-text" style="color: #1A2A40; width: 500px;">
+                                <h4>Sana K.</h4>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                                <h6>“Outstanding hospitality!” The team went above and beyond to make our trip
+                                    memorable. Thank you for the warm welcome and personalized service!”</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="d-flex review-card">
+                            <div class="review-img"><img src="img/p7.jpg" alt=""
+                                    style="width: 150px; height: 150px; border-radius: 100px; background: #0F1C2E;">
+                            </div>
+                            <div class="text-center review-text" style="color: #1A2A40; width: 500px;">
+                                <h4>Imran & Zara</h4>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                                <h6>“In love with Zafira.” Such a peaceful place! The birds safari and market tour were
+                                    highlights of our trip. Already planning to come back.”</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="d-flex review-card">
+                            <div class="review-img"><img src="img/p8.jpg" alt=""
+                                    style="width: 150px; height: 150px; border-radius: 100px; background: #0F1C2E;">
+                            </div>
+                            <div class="text-center review-text" style="color: #1A2A40; width: 500px;">
+                                <h4>Kavita R.</h4>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                                <h6>“Best hill station escape.” Woke up to cool breezes and amazing views every morning.
+                                    Perfect place to slow down and enjoy nature.”</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="d-flex review-card">
+                            <div class="review-img"><img src="img/p9.jpg" alt=""
+                                    style="width: 150px; height: 150px; border-radius: 100px; background: #0F1C2E;">
+                            </div>
+                            <div class="text-center review-text" style="color: #1A2A40; width: 500px;">
+                                <h4>Armaan T.</h4>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i><i
+                                        class="fa-solid fa-star fa-lg" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                                <h6>“Beautiful and memorable.” The horses ride and cultural tour were fantastic. Great
+                                    service and lovely rooms — highly recommend!”</h6>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                </swiper-container>
+            </div>
+
+        </div>
+    </div>
+    <!-- end -->
+       <!-- about -->
+    <div class="container-fluid about-section" id="about">
+        <div class="row align-items-center">
+
+            <div data-aos="fade-right" class="col-lg-6 text-center about-content p-4">
+                <h1 data-aos="fade-down"  data-aos-duration="1000" class="my-5 about-heading " style="font-family: main;">ABOUT </h1>
+
+                <h6 class="about-text">
+                    Zafira is a serene hilltop retreat designed for travelers who seek peace, luxury, and a deeper
+                    connection with nature. Surrounded by breathtaking mountain views, fresh crisp air, and lush
+                    greenery, Zafira offers an escape from the chaos of city life into a world of calm elegance and
+                    comfort. Every corner of the hotel is thoughtfully crafted to blend modern sophistication with
+                    natural beauty, creating a warm and welcoming atmosphere for couples, families, and solo explorers
+                    alike. From beautifully designed rooms with panoramic views to personalized hospitality and premium
+                    amenities, Zafira ensures that every guest experiences both relaxation and refinement. Whether you
+                    are enjoying a quiet sunrise above the clouds, savoring gourmet cuisine, exploring nearby cultural
+                    attractions, or simply unwinding in peaceful surroundings, your stay at Zafira becomes more than
+                    just a vacation — it becomes a cherished memory. 
+                </h6>
+
+                <h6 class="about-text">
+                    Zafira is more than a hotel — it is a feeling, a quiet whisper of the mountains calling you to
+                    pause, breathe, and fall in love all over again. Nestled high among the hills, where the mornings
+                    begin with golden sunrises above the clouds and evenings melt into soft, dreamy sunsets, Zafira
+                    creates the perfect setting for unforgettable moments.
+                </h6>
+            </div>
+
+            <div class="col-lg-6 about-image"></div>
+
+        </div>
+    </div>
+    <!-- end -->
+    <!-- contact -->
+    <div class="container contact-section" id="contact">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8 col-md-10 col-11 contact-box">
+                <h1 data-aos="fade-down" class="text-center mt-5 " style="font-family: main;">CONTACT</h1>
+
+                <h5 class="text-center mt-3 contact-info">
+                    Zafira@gmail.com / 500 Terry Francine Street, San Francisco, CA 94158 / +37647 71467
+                </h5>
+
+                <div data-aos="fade-up"  data-aos-duration="1000" class="my-5">
+                    <form class="row g-3">
+
+                        <div class="col-md-6 col-12">
+                            <label class="form-label">Enter Your First Name*</label>
+                            <input type="text" class="form-control custom-input">
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <label class="form-label">Enter Your Last Name*</label>
+                            <input type="text" class="form-control custom-input">
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <label class="form-label">Enter Your Email*</label>
+                            <input type="email" class="form-control custom-input">
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <label class="form-label">Enter Your Subject</label>
+                            <input type="text" class="form-control custom-input">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Enter Your Message</label>
+                            <textarea class="form-control custom-input" rows="4"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn submit-btn w-100">
+                                Submit
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid footer" style="margin-top: 100px;">
+        <div class="row align-items-center text-center text-lg-start">
+
+            <div class="col-lg-6 mb-4 mb-lg-0 footer-left">
+                <h1 class="logo">NOVA</h1>
+                <p class="copyright">© NOVA All rights Reserved.</p>
+            </div>
+
+            <div class="col-lg-6 footer-right">
+
+                <nav class="footer-nav">
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="services.html">SERVICE</a>
+                    <a href="work.html">WORK</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">CONTACT</a>
+                </nav>
+
+                <div class="social-icons mt-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
